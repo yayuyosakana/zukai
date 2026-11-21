@@ -1,6 +1,10 @@
 # zukai · 図解
 
-**An Agent Skill for drawing and checking SVG diagrams and charts.** Use it to explain a workflow, show how a system fits together, or make the results of an experiment easier to read in a report, tutorial, or slide.
+**An Agent Skill for drawing and checking SVG diagrams and charts.**
+
+![A paper README asks for a self-portrait. Zukai draws an SVG, checks it at display width, and places the illustration inside the README.](examples/readme-self-portrait.svg)
+
+This README asked zukai to illustrate its own instructions. Follow the paper character into the finished figure on the right. [Install zukai](#install) or [try a prompt](#try-it) to draw one for your own document.
 
 ## Figure gallery
 
