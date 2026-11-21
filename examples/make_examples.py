@@ -38,7 +38,7 @@ def readme_self_portrait():
 
     fig.arrow(207, 184, 255, 184, color=blue, width=2)
     fig.text(282, 91, "At the drawing board", size=17, anchor="start", color=ink, bold=True)
-    fig.box(282, 114, 92, 46, "data", "Plan layout", size=14)
+    fig.box(282, 114, 92, 46, "data", "Sketch", size=14)
     fig.arrow(378, 137, 406, 137, color=blue)
     fig.box(411, 114, 99, 46, "enc", "Draw SVG", size=14)
     fig.line(283, 173, 509, 173, color=blue, width=1)
