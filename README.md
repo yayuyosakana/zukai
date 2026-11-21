@@ -45,6 +45,12 @@ Select any figure to open its SVG. All plotted data are synthetic.
   </tr>
 </table>
 
+### Worked example: trace requests through a cache
+
+[![Two panels show where one thousand simulated requests go and which stages account for latency](examples/request-routing.svg)](examples/request-routing.svg)
+
+The widths of the Sankey flows show how the 1,000 requests split. All 40 timeouts follow a cache miss. Among successful requests, a miss takes 80 ms on average versus 20 ms for a hit. The stacked bars show the time spent on the cache lookup and the response that follows.
+
 ## Install
 
 In your project directory, run the [skills CLI](https://github.com/vercel-labs/skills) and select your agent:

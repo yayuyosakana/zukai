@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 328" width="920" height="328" data-place-mm="206.375" data-target="md" font-family="'Hiragino Sans','Noto Sans CJK JP','Noto Sans JP','Yu Gothic',sans-serif" fill="#222222">
+<title>Cache misses account for all 40 timeouts</title>
+<desc>A Sankey diagram traces simulated requests. Stacked bars compare mean latency by stage for successful requests.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="460.0" y="34.0" font-size="25" text-anchor="middle" font-weight="bold">Cache misses account for all 40 timeouts</text>
+<text x="26.0" y="75.0" font-size="17" text-anchor="start" font-weight="bold">A</text>
+<text x="55.0" y="74.0" font-size="17" text-anchor="start" font-weight="bold">Where requests go</text>
+<text x="520.0" y="75.0" font-size="17" text-anchor="start" font-weight="bold">B</text>
+<text x="549.0" y="74.0" font-size="17" text-anchor="start" font-weight="bold">What takes time</text>
+<line x1="500.0" y1="63.0" x2="500.0" y2="274.0" stroke="#dddddd" stroke-width="1"/>
+<path d="M111.0,109.6 C172.0,109.6 172.0,104.0 233.0,104.0 L233.0,199.8 C172.0,199.8 172.0,205.4 111.0,205.4 Z" fill="#777777" fill-opacity="0.35" stroke="none"/>
+<path d="M111.0,205.4 C172.0,205.4 172.0,219.8 233.0,219.8 L233.0,257.0 C172.0,257.0 172.0,242.6 111.0,242.6 Z" fill="#0072B2" fill-opacity="0.35" stroke="none"/>
+<path d="M249.0,104.0 C310.0,104.0 310.0,104.0 371.0,104.0 L371.0,199.8 C310.0,199.8 310.0,199.8 249.0,199.8 Z" fill="#777777" fill-opacity="0.35" stroke="none"/>
+<path d="M249.0,219.8 C310.0,219.8 310.0,199.8 371.0,199.8 L371.0,231.7 C310.0,231.7 310.0,251.7 249.0,251.7 Z" fill="#0072B2" fill-opacity="0.35" stroke="none"/>
+<path d="M249.0,251.7 C310.0,251.7 310.0,251.7 371.0,251.7 L371.0,257.0 C310.0,257.0 310.0,257.0 249.0,257.0 Z" fill="#D55E00" fill-opacity="0.35" stroke="none"/>
+<rect x="95.0" y="109.6" width="16.0" height="133.0" rx="0" fill="#777777" stroke="none"/>
+<text x="89.0" y="173.7" font-size="12" text-anchor="end">Incoming</text>
+<text x="89.0" y="189.9" font-size="12" text-anchor="end" fill="#555555">1,000</text>
+<rect x="233.0" y="104.0" width="16.0" height="95.8" rx="0" fill="#777777" stroke="none"/>
+<text x="255.0" y="149.5" font-size="12" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">Cache hit</text>
+<text x="255.0" y="165.7" font-size="12" text-anchor="start" fill="#555555" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">720</text>
+<rect x="233.0" y="219.8" width="16.0" height="37.2" rx="0" fill="#0072B2" stroke="none"/>
+<text x="255.0" y="236.0" font-size="12" text-anchor="start" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">Cache miss</text>
+<text x="255.0" y="252.2" font-size="12" text-anchor="start" fill="#555555" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" paint-order="stroke">280</text>
+<rect x="371.0" y="104.0" width="16.0" height="127.7" rx="0" fill="#777777" stroke="none"/>
+<text x="393.0" y="165.4" font-size="12" text-anchor="start">Served</text>
+<text x="393.0" y="181.6" font-size="12" text-anchor="start" fill="#555555">960</text>
+<rect x="371.0" y="251.7" width="16.0" height="5.3" rx="0" fill="#D55E00" stroke="none"/>
+<text x="393.0" y="258.5" font-size="12" text-anchor="start">Timed out　40</text>
+<g data-chart="stacked">
+<line x1="600.0" y1="128.0" x2="600.0" y2="236.0" stroke="#dddddd" stroke-width="1"/>
+<text x="600.0" y="254.0" font-size="12" text-anchor="middle" fill="#555555">0</text>
+<line x1="652.9" y1="128.0" x2="652.9" y2="236.0" stroke="#dddddd" stroke-width="1"/>
+<text x="652.9" y="254.0" font-size="12" text-anchor="middle" fill="#555555">20</text>
+<line x1="705.7" y1="128.0" x2="705.7" y2="236.0" stroke="#dddddd" stroke-width="1"/>
+<text x="705.7" y="254.0" font-size="12" text-anchor="middle" fill="#555555">40</text>
+<line x1="758.6" y1="128.0" x2="758.6" y2="236.0" stroke="#dddddd" stroke-width="1"/>
+<text x="758.6" y="254.0" font-size="12" text-anchor="middle" fill="#555555">60</text>
+<line x1="811.4" y1="128.0" x2="811.4" y2="236.0" stroke="#dddddd" stroke-width="1"/>
+<text x="811.4" y="254.0" font-size="12" text-anchor="middle" fill="#555555">80</text>
+<text x="590.0" y="160.0" font-size="12" text-anchor="end">Cache hit</text>
+<rect x="600.0" y="137.7" width="31.7" height="34.6" rx="0" fill="#BBBBBB" stroke="#ffffff"/>
+<text x="615.9" y="160.0" font-size="12" text-anchor="middle" font-weight="bold">12</text>
+<rect x="631.7" y="137.7" width="21.1" height="34.6" rx="0" fill="#0072B2" stroke="#ffffff"/>
+<text x="642.3" y="160.0" font-size="12" text-anchor="middle" fill="#ffffff" font-weight="bold">8</text>
+<text x="660.9" y="160.0" font-size="12" text-anchor="start" fill="#555555">n = 720</text>
+<text x="590.0" y="214.0" font-size="12" text-anchor="end">Cache miss</text>
+<rect x="600.0" y="191.7" width="31.7" height="34.6" rx="0" fill="#BBBBBB" stroke="#ffffff"/>
+<text x="615.9" y="214.0" font-size="12" text-anchor="middle" font-weight="bold">12</text>
+<rect x="631.7" y="191.7" width="179.7" height="34.6" rx="0" fill="#0072B2" stroke="#ffffff"/>
+<text x="721.6" y="214.0" font-size="12" text-anchor="middle" fill="#ffffff" font-weight="bold">68</text>
+<text x="819.4" y="214.0" font-size="12" text-anchor="start" fill="#555555">n = 240</text>
+<text x="711.0" y="278.0" font-size="13" text-anchor="middle">Mean time among successful requests (ms)</text>
+</g>
+<rect x="600.0" y="106.0" width="16" height="12" rx="2" fill="#BBBBBB" stroke="#555555" stroke-width="0.8"/>
+<text x="622.0" y="117.0" font-size="12" text-anchor="start">Cache lookup</text>
+<rect x="719.5" y="106.0" width="16" height="12" rx="2" fill="#0072B2" stroke="#555555" stroke-width="0.8"/>
+<text x="741.5" y="117.0" font-size="12" text-anchor="start">Response</text>
+<text x="460.0" y="305.0" font-size="12" text-anchor="middle" fill="#555555">Synthetic traffic · 1,000 incoming requests</text>
+</svg>

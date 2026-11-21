@@ -108,6 +108,45 @@ def effect_intervals():
     fig.save(HERE / "forest.svg", desc="Three illustrative effect estimates and 95% confidence intervals compared against zero.")
 
 
+def request_routing():
+    # Synthetic request counts and mean stage durations among successful requests.
+    cache_hits, upstream_served, timeouts = 720, 240, 40
+    cache_misses = upstream_served + timeouts
+    gray, blue, orange = "#777777", "#0072B2", "#D55E00"
+    fig = Fig(920, 328, title="Cache misses account for all 40 timeouts", title_size=25, display_px=780)
+    fig.panel_label(26, 75, "A", "Where requests go", size=17, title_size=17)
+    fig.panel_label(520, 75, "B", "What takes time", size=17, title_size=17)
+    fig.line(500, 63, 500, 274)
+
+    fig.sankey(
+        95, 104, 292, 153,
+        [
+            ("Incoming", "Cache hit", cache_hits, gray),
+            ("Incoming", "Cache miss", cache_misses, blue),
+            ("Cache hit", "Served", cache_hits, gray),
+            ("Cache miss", "Served", upstream_served, blue),
+            ("Cache miss", "Timed out", timeouts, orange),
+        ],
+        columns=[["Incoming"], ["Cache hit", "Cache miss"], ["Served", "Timed out"]],
+        colors={"Incoming": gray, "Cache hit": gray, "Cache miss": blue, "Served": gray, "Timed out": orange},
+        value_fmt=lambda count: f"{count:,}",
+        gap=20,
+    )
+
+    fig.stacked_bar(
+        520, 104, 372, 132,
+        ["Cache hit", "Cache miss"], [[12, 8], [12, 68]],
+        ["Cache lookup", "Response"],
+        colors=["#BBBBBB", blue], n=[cache_hits, upstream_served],
+        value_label="Mean time among successful requests (ms)",
+    )
+    fig.caption(f"Synthetic traffic · {cache_hits + cache_misses:,} incoming requests", y=305, size=12)
+    fig.save(
+        HERE / "request-routing.svg",
+        desc="A Sankey diagram traces simulated requests. Stacked bars compare mean latency by stage for successful requests.",
+    )
+
+
 if __name__ == "__main__":
     workflow()
     comparison()
@@ -115,3 +154,4 @@ if __name__ == "__main__":
     score_matrix()
     agreement()
     effect_intervals()
+    request_routing()
