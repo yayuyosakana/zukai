@@ -2,9 +2,48 @@
 
 **An Agent Skill for drawing and checking SVG diagrams and charts.** Use it to explain a workflow, show how a system fits together, or make the results of an experiment easier to read in a report, tutorial, or slide.
 
-![Four boxes linked by arrows: plan, draw, check, and caption](examples/workflow.svg)
+## Figure gallery
 
-Decide how the figure will be used, draw it as SVG, check legibility at the intended width, then give readers a caption that tells them what to look at.
+Select any figure to open its SVG. All plotted data are synthetic.
+
+<table>
+  <tr>
+    <td width="50%">
+      <strong>Workflow diagram</strong><br>
+      <a href="examples/workflow.svg"><img src="examples/workflow.svg" width="450" alt="Four linked steps from planning a figure to embedding it"></a><br>
+      Follow the steps from choosing a question to writing the caption.
+    </td>
+    <td width="50%">
+      <strong>Repeated measurements</strong><br>
+      <a href="examples/comparison.svg"><img src="examples/comparison.svg" width="450" alt="Six timing observations per method, plotted as points with mean and standard deviation"></a><br>
+      Each dot is one run. Open circles and whiskers show the mean and one standard deviation on each side.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <strong>Learning curves</strong><br>
+      <a href="examples/learning-curve.svg"><img src="examples/learning-curve.svg" width="450" alt="Validation loss falls over eight epochs for both methods"></a><br>
+      Track each method across epochs using a shared axis.
+    </td>
+    <td width="50%">
+      <strong>Heatmap</strong><br>
+      <a href="examples/heatmap.svg"><img src="examples/heatmap.svg" width="450" alt="Three methods by three datasets, with each accuracy printed in its cell"></a><br>
+      Compare accuracy across datasets. The numbers give the exact values.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <strong>Scatter plot</strong><br>
+      <a href="examples/scatter.svg"><img src="examples/scatter.svg" width="450" alt="Predicted and observed latencies plotted around a diagonal line of equality"></a><br>
+      Each dot is a prediction and its observed value. The dashed diagonal shows perfect agreement.
+    </td>
+    <td width="50%">
+      <strong>Forest plot</strong><br>
+      <a href="examples/forest.svg"><img src="examples/forest.svg" width="450" alt="Three estimated group effects with horizontal confidence intervals and a zero reference"></a><br>
+      The squares show estimated differences. Read the intervals against the dashed line at zero.
+    </td>
+  </tr>
+</table>
 
 ## Install
 
@@ -26,13 +65,7 @@ Ask your agent to use zukai and tell it where the figure will appear:
 
 > zukai を使って、この実験レポートに「何をしたか」の流れ図と「何が分かったか」の結果図を入れて。各図の下に、どこを見ればいいか一文で書いて。
 
-## Example: compare repeated measurements
-
-![Dot plot comparing six synthetic latency measurements each for a baseline and a candidate](examples/comparison.svg)
-
-Each colored dot is one synthetic timing run. The open circles and whiskers show means and one sample standard deviation on each side. The candidate measurements cluster at lower latencies in these example data.
-
-### What gets checked
+## What gets checked
 
 | At this step | What zukai looks for |
 |---|---|
@@ -52,7 +85,7 @@ python3 skills/zukai/scripts/check_svg.py examples/*.svg
 python3 skills/zukai/scripts/check_md.py README.md
 ```
 
-The [example script](examples/make_examples.py) shows how to draw boxes and arrows, then plot individual observations and a summary interval. For more figure types, see the [chart and diagram guide](skills/zukai/references/patterns.md). Agent instructions are in [SKILL.md](skills/zukai/SKILL.md).
+The [example script](examples/make_examples.py) recreates every figure in the gallery. For more figure types, see the [chart and diagram guide](skills/zukai/references/patterns.md). Agent instructions are in [SKILL.md](skills/zukai/SKILL.md).
 
 ## License
 

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 272" width="450" height="272" data-place-mm="95.25" data-target="md" font-family="'Hiragino Sans','Noto Sans CJK JP','Noto Sans JP','Yu Gothic',sans-serif" fill="#222222">
+<title>Compare scores across datasets</title>
+<desc>Synthetic accuracy scores for three methods and three datasets.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<defs><linearGradient id="hm27" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0072B2"/><stop offset="10%" stop-color="#137DB8"/><stop offset="20%" stop-color="#3891C3"/><stop offset="30%" stop-color="#499AC8"/><stop offset="40%" stop-color="#61A8CF"/><stop offset="50%" stop-color="#79B5D7"/><stop offset="60%" stop-color="#91C2DE"/><stop offset="70%" stop-color="#AAD0E5"/><stop offset="80%" stop-color="#C2DDED"/><stop offset="90%" stop-color="#DAEBF4"/><stop offset="100%" stop-color="#F2F8FB"/></linearGradient></defs>
+<text x="225.0" y="34.0" font-size="19" text-anchor="middle" font-weight="bold">Compare scores across datasets</text>
+<g data-chart="heatmap" data-scale="all">
+<rect x="111.5" y="83.0" width="76.5" height="45.7" fill="#91C2DE" stroke="#ffffff" stroke-width="2"/>
+<text x="149.8" y="110.2" font-size="12" text-anchor="middle">72</text>
+<rect x="188.0" y="83.0" width="76.5" height="45.7" fill="#D2E6F1" stroke="#ffffff" stroke-width="2"/>
+<text x="226.3" y="110.2" font-size="12" text-anchor="middle">64</text>
+<rect x="264.5" y="83.0" width="76.5" height="45.7" fill="#71B1D4" stroke="#ffffff" stroke-width="2"/>
+<text x="302.8" y="110.2" font-size="12" text-anchor="middle">76</text>
+<rect x="111.5" y="128.7" width="76.5" height="45.7" fill="#61A8CF" stroke="#ffffff" stroke-width="2"/>
+<text x="149.8" y="155.8" font-size="12" text-anchor="middle">78</text>
+<rect x="188.0" y="128.7" width="76.5" height="45.7" fill="#79B5D7" stroke="#ffffff" stroke-width="2"/>
+<text x="226.3" y="155.8" font-size="12" text-anchor="middle">75</text>
+<rect x="264.5" y="128.7" width="76.5" height="45.7" fill="#499AC8" stroke="#ffffff" stroke-width="2"/>
+<text x="302.8" y="155.8" font-size="12" text-anchor="middle">81</text>
+<rect x="111.5" y="174.3" width="76.5" height="45.7" fill="#4196C6" stroke="#ffffff" stroke-width="2"/>
+<text x="149.8" y="201.5" font-size="12" text-anchor="middle">82</text>
+<rect x="188.0" y="174.3" width="76.5" height="45.7" fill="#59A3CD" stroke="#ffffff" stroke-width="2"/>
+<text x="226.3" y="201.5" font-size="12" text-anchor="middle">79</text>
+<rect x="264.5" y="174.3" width="76.5" height="45.7" fill="#3991C3" stroke="#ffffff" stroke-width="2"/>
+<text x="302.8" y="201.5" font-size="12" text-anchor="middle">83</text>
+</g>
+<text x="103.5" y="110.2" font-size="12" text-anchor="end">Baseline</text>
+<text x="103.5" y="155.8" font-size="12" text-anchor="end">Candidate</text>
+<text x="103.5" y="201.5" font-size="12" text-anchor="end">Ensemble</text>
+<text x="149.8" y="75.0" font-size="12" text-anchor="middle">Set A</text>
+<text x="226.3" y="75.0" font-size="12" text-anchor="middle">Set B</text>
+<text x="302.8" y="75.0" font-size="12" text-anchor="middle">Set C</text>
+<g data-colorbar="1"><rect x="357.0" y="83.0" width="14" height="137.0" fill="url(#hm27)" stroke="#555555" stroke-width="0.8"/></g>
+<line x1="371.0" y1="220.0" x2="375.0" y2="220.0" stroke="#555555" stroke-width="1"/>
+<text x="378.0" y="224.0" font-size="12" text-anchor="start" fill="#555555">60</text>
+<line x1="371.0" y1="174.3" x2="375.0" y2="174.3" stroke="#555555" stroke-width="1"/>
+<text x="378.0" y="178.3" font-size="12" text-anchor="start" fill="#555555">70</text>
+<line x1="371.0" y1="128.7" x2="375.0" y2="128.7" stroke="#555555" stroke-width="1"/>
+<text x="378.0" y="132.7" font-size="12" text-anchor="start" fill="#555555">80</text>
+<line x1="371.0" y1="83.0" x2="375.0" y2="83.0" stroke="#555555" stroke-width="1"/>
+<text x="378.0" y="87.0" font-size="12" text-anchor="start" fill="#555555">90</text>
+<text x="357.0" y="65.0" font-size="12" text-anchor="start" fill="#555555">Accuracy (%)</text>
+</svg>
